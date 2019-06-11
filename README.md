@@ -12,7 +12,7 @@ HOW TO USE:
 3. Construct an instance of the class as follows:
 
 	const SecShiftSecureStore = require("./secshift-secure-store.js")
-	const secureStore = new SecShiftSecureStore(<CLIENT-SECRET-KEY>,<SERVER-PUBLIC-KEY>)
+	const secureStore = new SecShiftSecureStore(CLIENT-SECRET-KEY,SERVER-PUBLIC-KEY)
 
 4. Use the class to generate a store auth token that needs to be passed to the client browser javascript:
 
@@ -20,7 +20,7 @@ HOW TO USE:
 
 5. Validate the Store Response Token passed back from the client browser javascript:
 
-	secureStore.validateStoreResponseToken(<STORE-RESPONSE-TOKEN>)
+	secureStore.validateStoreResponseToken(STORE-RESPONSE-TOKEN)
 
    This will return an object as follows:
 
@@ -36,7 +36,7 @@ HOW TO USE:
 
 6. Generate a retrieve auth token that needs to be passed to the client browser javascript to retrieve details:
 
-	secureStore.generateRetrieveAuthToken(<SLOT-TOKEN>)
+	secureStore.generateRetrieveAuthToken(SLOT-TOKEN)
 
 
 
